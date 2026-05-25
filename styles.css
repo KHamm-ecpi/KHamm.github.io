@@ -2,17 +2,18 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #e8f0ff, #ffffff);
-    color: #222;
+    background: linear-gradient(to bottom, #e8ddc7, #f7f1e3);
+    color: #2b2118;
     line-height: 1.6;
 }
 
 /* Main page header */
 body > header {
     text-align: center;
-    background-color: #1f2937;
-    color: white;
-    padding: 30px 20px;
+    background-color: #1f3a2e;
+    color: #f7f1e3;
+    padding: 35px 20px;
+    border-bottom: 6px solid #7a5c3a;
 }
 
 body > header h1 {
@@ -26,7 +27,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     margin: 0;
     padding: 0;
 }
@@ -36,16 +37,16 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #f7f1e3;
     text-decoration: none;
-    background-color: #374151;
+    background-color: #4b3523;
     padding: 10px 18px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 nav a:hover {
-    background-color: #2563eb;
-    color: white;
+    background-color: #8b6f47;
+    color: #ffffff;
 }
 
 /* Main section layout */
@@ -57,17 +58,18 @@ main {
 
 /* Content sections */
 section {
-    background-color: white;
+    background-color: #fffaf0;
     padding: 25px;
     margin-bottom: 25px;
-    border: 1px solid #d1d5db;
+    border: 1px solid #c8b899;
+    border-left: 8px solid #1f3a2e;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 10px rgba(43, 33, 24, 0.18);
 }
 
 /* Section headers */
 section header {
-    background-color: #f3f4f6;
+    background-color: #e8ddc7;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 6px;
@@ -75,15 +77,16 @@ section header {
 
 section h2 {
     margin: 0;
-    color: #1f2937;
+    color: #1f3a2e;
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     font-size: 0.9em;
-    background-color: #1f2937;
-    color: white;
-    padding: 15px;
+    background-color: #1f3a2e;
+    color: #f7f1e3;
+    padding: 18px;
     margin-top: 30px;
+    border-top: 6px solid #7a5c3a;
 }
