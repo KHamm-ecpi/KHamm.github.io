@@ -90,3 +90,58 @@ footer {
     margin-top: 30px;
     border-top: 6px solid #7a5c3a;
 }
+
+/* Smooth transition for navigation link background color */
+nav a {
+    transition: background-color 0.3s ease;
+}
+
+/* Smooth zoom effect for main content sections */
+main section {
+    transition: transform 0.3s ease;
+}
+
+main section:hover {
+    transform: scale(1.02);
+}
+
+/* Project table styling */
+#projects table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Project table caption */
+#projects caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1f3a2e;
+}
+
+/* Project table cells */
+#projects th,
+#projects td {
+    border: 1px solid #7a5c3a;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Project table header background */
+#projects thead {
+    background-color: #1f3a2e;
+    color: #f7f1e3;
+}
+
+/* Project table footer styling */
+#projects tfoot {
+    background-color: #e8ddc7;
+    font-style: italic;
+}
+
+/* Background color for the first and third project table columns */
+#projects col.projectColumn {
+    background-color: #f3e6bd;
+}
