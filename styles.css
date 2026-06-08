@@ -26,6 +26,7 @@ body > header h1 {
 nav ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 12px;
     margin: 0;
@@ -42,6 +43,7 @@ nav a {
     background-color: #4b3523;
     padding: 10px 18px;
     border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -54,17 +56,28 @@ main {
     max-width: 900px;
     margin: 30px auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 /* Content sections */
 section {
     background-color: #fffaf0;
     padding: 25px;
-    margin-bottom: 25px;
     border: 1px solid #c8b899;
     border-left: 8px solid #1f3a2e;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(43, 33, 24, 0.18);
+}
+
+/* Smooth zoom effect for main content sections */
+main section {
+    transition: transform 0.3s ease;
+}
+
+main section:hover {
+    transform: scale(1.02);
 }
 
 /* Section headers */
@@ -78,31 +91,6 @@ section header {
 section h2 {
     margin: 0;
     color: #1f3a2e;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    background-color: #1f3a2e;
-    color: #f7f1e3;
-    padding: 18px;
-    margin-top: 30px;
-    border-top: 6px solid #7a5c3a;
-}
-
-/* Smooth transition for navigation link background color */
-nav a {
-    transition: background-color 0.3s ease;
-}
-
-/* Smooth zoom effect for main content sections */
-main section {
-    transition: transform 0.3s ease;
-}
-
-main section:hover {
-    transform: scale(1.02);
 }
 
 /* Project table styling */
@@ -144,4 +132,90 @@ main section:hover {
 /* Background color for the first and third project table columns */
 #projects col.projectColumn {
     background-color: #f3e6bd;
+}
+
+/* Contact form layout */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+/* Contact form labels */
+#contact label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Contact form fields */
+#contact input,
+#contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #7a5c3a;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+/* Contact form focus effect */
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #1f3a2e;
+    outline: none;
+}
+
+/* Submit button styling */
+#contact input[type="submit"] {
+    width: fit-content;
+    background-color: #1f3a2e;
+    color: #f7f1e3;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+#contact input[type="submit"]:hover {
+    background-color: #8b6f47;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #1f3a2e;
+    color: #f7f1e3;
+    padding: 18px;
+    margin-top: 30px;
+    border-top: 6px solid #7a5c3a;
+}
+
+/* Phone display */
+@media screen and (min-width: 320px) {
+    main,
+    nav ul,
+    #contact form {
+        gap: 10px;
+    }
+}
+
+/* Tablet display */
+@media screen and (min-width: 768px) {
+    main,
+    nav ul,
+    #contact form {
+        gap: 18px;
+    }
+}
+
+/* Desktop display */
+@media screen and (min-width: 1024px) {
+    main,
+    nav ul,
+    #contact form {
+        gap: 25px;
+    }
 }
