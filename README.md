@@ -39,3 +39,6 @@ This project is for educational purposes.
 Created by Kristopher Hamm Ray.
 
 For questions or feedback, contact me through the information provided on the portfolio website.
+
+## Screenshot
+![Portfolio Website Screenshot](WebsiteScreenshot.png)
